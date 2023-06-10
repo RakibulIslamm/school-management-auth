@@ -5,9 +5,9 @@ type UserModel = Model<UserInterface, object>
 
 const userSchema = new Schema<UserInterface>(
   {
-    id: { type: String, required: true, unique: true },
+    id: { type: String, unique: true },
     role: { type: String, required: true },
-    password: { type: String, required: true },
+    password: { type: String },
   },
   { timestamps: true }
 )
