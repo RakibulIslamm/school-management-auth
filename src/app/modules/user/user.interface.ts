@@ -1,6 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/consistent-type-definitions
 export interface UserInterface {
-  id: string
+  id?: string
   role: string
-  password: string
+  password?: string
 }
